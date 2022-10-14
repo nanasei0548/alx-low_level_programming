@@ -12,7 +12,7 @@ int main(void)
 {
 	int d;
 
-	for (d = 'a'; d <= 'z'; d++)
+	for (d = 'z'; d <= 'a'; d++)
 
 		putchar(d);
 
