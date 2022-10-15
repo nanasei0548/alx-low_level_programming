@@ -1,31 +1,31 @@
-#include<stdio.h>
-#include<stdlib.h>
-#include<time.h>
-
+#include <stdio.h>
 /**
  * main - Entry point
- * Return - Always 0 (Success)
+ * Return: Always 0 (Success)
  */
+
 int main(void)
 {
-	int x, y;
+	int n;
+	int i;
 
-	for (x = '0'; x < '9'; x++)
+	for (n = 0 ; n < 9 ; n++)
 	{
-		for (y = x + 1; y <= '9'; y++)
-		{
-			if (y != x)
-			{
-				putchar(x);
-				putchar(y);
+		i = n + 1;
+		do {
+			putchar('0' + n);
+			putchar('0' + i);
 
-				if (x == '8' && y == '9')
-					continue;
+			if (n < 8)
+			{
 				putchar(',');
-				putchar(' ');
+				putchar(32);
 			}
-		}
+			i++;
+		} while (i < 10);
 	}
 	putchar('\n');
 	return (0);
 }
+
+
