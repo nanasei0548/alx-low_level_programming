@@ -1,4 +1,4 @@
-#include <unistd.h>
+#include <main.h>
 
 /**
  * main - Check description
@@ -14,5 +14,5 @@ int main(void)
 	for (i = 0; i < 9; i++)
 		putchar(word[i]);
 	_putchar("\n");
-	return(0);
+	return (0);
 }
