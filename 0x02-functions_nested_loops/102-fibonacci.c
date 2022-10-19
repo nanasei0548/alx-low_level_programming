@@ -7,18 +7,19 @@
 
 int main(void)
 {
-	int i;
-	long int fibonacci[50], sum = 2;
-	fibonacci[0] = 1;
-	fibonacci[1] = 2;
+	int count;
+	unsigned long fib1 = 0, fib2 = 1, sum;
 
-	for (i = 2; i < 50; i++)
+	for (count = 0; count < 50; count++)
 	{
-		fibonacci[i] = fibonacci[i - 1] + fibonacci[i - 2];
-
-		if ((fibonacci[i] % 2) == 0 && fibonacci[i] < 4000000)
-			sum += fibonacci[i];
+		sum = fib1 + fib2;
+		printf("%lu", sum);
+		fib1 = fib2;
+		fib2 = sum;
+		if (count == 49)
+			printf("\n");
+		else
+			printf(", ");
 	}
-	printf("%ld\n", sum);
 	return (0);
 }
