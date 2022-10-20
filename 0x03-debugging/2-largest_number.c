@@ -3,7 +3,7 @@
 
 /**
 * main - prints the largest of 3 integers
-* Return: 0
+* Return: largest
 * @x: integer one
 * @y: integer two
 * @z: integer three
@@ -21,10 +21,13 @@ int largest_number(int x, int y, int z)
 			largest = x;
 		else 
 			largest = z;
+	}
 	else;
+	{
 		if (y < z)
 			largest = z;
 		else
 			largest = y;
 	}
+	return: largest
 }
