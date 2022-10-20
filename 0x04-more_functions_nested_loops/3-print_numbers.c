@@ -2,6 +2,7 @@
 
 /**
  * print_numbers - Prints ithe numbers from 0-9.
+ * @x: an integer
  */
 void print_numbers(void)
 {
@@ -11,4 +12,5 @@ void print_numbers(void)
 		_putchar((x % 10) + '0');
 
 	_putchar('\n');
+}
 
