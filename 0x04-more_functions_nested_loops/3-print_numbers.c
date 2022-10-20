@@ -4,6 +4,7 @@
  * print_numbers - Prints ithe numbers from 0-9.
  * @x: an integer
  */
+
 void print_numbers(void)
 {
 	int x;
