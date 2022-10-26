@@ -1,4 +1,4 @@
-nclude "nana.h"
+#include "nana.h"
 
 /**
  * base10 - power in 10 base
