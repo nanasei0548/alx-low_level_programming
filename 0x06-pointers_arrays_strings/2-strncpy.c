@@ -1,4 +1,4 @@
-nclude "nana.h"
+#include "nana.h"
 
 /**
  * _strncpy - a function that copys the strings.
